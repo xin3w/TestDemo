@@ -43,7 +43,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/TestDemo/vue-cli/dist/',//https://xin3w.github.io/TestDemo/vue-cli/dist/index.html
+    // assetsPublicPath: '/vue-cli/dist/',//http://127.0.0.1:8080/vue-cli/dist/index.html
 
     /**
      * Source Maps
