@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 
 Vue.prototype.$axios = axios
 
-
+import '@/assets/less/style.less'
 window.Vue = new Vue({
   el: '#app',
   router,
