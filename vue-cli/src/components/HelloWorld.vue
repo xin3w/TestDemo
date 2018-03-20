@@ -2,6 +2,8 @@
   <div>
     {{dataUrl}}
     <mt-button plain>plain</mt-button>
+    <div>{{ $t('m.login') }}</div>
+    <button @click="switchLang">切换语言</button>
   </div>
 </template>
 
@@ -14,7 +16,19 @@
     data() {
       return {
         msg: 'Welcome to Your Vue.js App',
-        dataUrl: ''
+        dataUrl: '',
+        lang:"zh-CN"
+      }
+    },
+    methods:{
+      switchLang(){
+        if(this.lang=="zh-CN"){
+          this.lang="en-US"
+          this.$i18n.locale='en-US'
+        }else{
+          this.lang="zh-CN"
+          this.$i18n.locale='zh-CN'
+        }
       }
     },
     mounted() {
