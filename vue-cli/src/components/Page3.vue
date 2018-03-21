@@ -1,7 +1,7 @@
 <template>
-  <div class="page-content  col-md-10">
-  	<h3>切换自动获取焦点</h3>
-    <button type="button" class="btn btn-primary" @click="switchShow">切换</button>
+  <div>
+    <h1 class="tit1">切换自动获取焦点</h1>
+    <el-button type="primary" @click="switchShow" size="mini">切换</el-button>
     <hr>
     <div v-if="show">
       <input type="text" class="form-control" placeholder="" ref="ipt1" value="内容1">

@@ -1,18 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/components/common/Home'
-import PageSide from '@/components/common/PageSide'
-import PageContent from '@/components/common/PageContent'
+import Home from '@/components/Home'
+import Page1 from '@/components/Page1'
+import Page2 from '@/components/Page2'
+import Page3 from '@/components/Page3'
 
-import HelloWorld from '@/components/page/HelloWorld'
-import TestFocus from '@/components/page/TestFocus'
-
-import TestI18n1 from '@/components/page/TestI18n1'
-import TestI18n2 from '@/components/page/TestI18n2'
-
-import TestEleForm from '@/components/page/TestEleForm'
-import TestEleForm2 from '@/components/page/TestEleForm2'
 
 Vue.use(Router)
 
@@ -22,49 +15,15 @@ export default new Router({
       path: '/',
       component: Home,
       children: [{
-        path: '',
-        components: {
-          side: PageSide,
-          content: PageContent
-        }
+        path: '1',
+        component:Page1
       }, {
-          path: 'TestFocus',
-          components: {
-            side: PageSide,
-            content:TestFocus
-          }  
+          path: '2',
+          component: Page2
         }, {
-          path: 'HelloWorld',
-          components: {
-            side: PageSide,
-            content: HelloWorld
-          }
-        }, {
-          path: 'TestI18n1',
-          components: {
-            side: PageSide,
-            content: TestI18n1
-          }
-        }, {
-          path: 'TestI18n2',
-          components: {
-            side: PageSide,
-            content: TestI18n2
-          }
-        }, {
-          path: 'TestEleForm',
-          components: {
-            side: PageSide,
-            content: TestEleForm
-          }
-        }, {
-          path: 'TestEleForm2',
-          components: {
-            side: PageSide,
-            content: TestEleForm2
-          }
+          path: '3',
+          component: Page3
         }]
-     
     }
   ]
 })

@@ -1,6 +1,8 @@
 <template>
-    <div class="page-content col-md-10">
-        <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+  <div>
+      <h1 class="tit1">element-ui自定义表单验证</h1>
+      <div>
+          <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
             <el-form-item label="姓名" prop="name">
                 <el-input type="text" v-model="ruleForm.name" auto-complete="off"></el-input>
             </el-form-item>
@@ -9,7 +11,8 @@
                 <el-button @click="resetForm('ruleForm2')">重置</el-button>
             </el-form-item>
         </el-form>
-    </div>
+      </div>
+  </div>
 </template>
 <script>
     export default {
