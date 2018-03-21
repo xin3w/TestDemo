@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/components/Home'
+import Page0 from '@/components/Page0'
 import Page1 from '@/components/Page1'
 import Page2 from '@/components/Page2'
 import Page3 from '@/components/Page3'
@@ -14,7 +15,11 @@ export default new Router({
     {
       path: '/',
       component: Home,
-      children: [{
+      children: [
+        {
+          path: '',
+          component: Page0
+        },{
         path: '1',
         component:Page1
       }, {

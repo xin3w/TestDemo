@@ -16,8 +16,8 @@ const i18n = new VueI18n({
   locale: 'zh-CN',    // 语言标识
   //this.$i18n.locale // 通过切换locale的值来实现语言切换
   messages: {
-    'zh-CN': require('@/lang/cn.js'),   // 中文语言包
-    'en-US': require('@/lang/en.js')    // 英文语言包
+    'zh-CN': require('@/lang/zh-CN.js'),   // 中文语言包
+    'en-US': require('@/lang/en-US.js')    // 英文语言包
   }
 })
 
