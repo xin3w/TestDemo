@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-content col-md-10">
     {{dataUrl}}
     <mt-button plain>plain</mt-button>
     <div>{{ $t('m.login') }}</div>
