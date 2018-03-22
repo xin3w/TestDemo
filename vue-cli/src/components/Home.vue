@@ -7,6 +7,7 @@
                     <router-link to='/1' tag="li">自定义表单验证</router-link>
                     <router-link to='/2' tag="li">国际化</router-link>
                     <router-link to='/3' tag="li">切换自动获取焦点</router-link>
+                    <router-link to='/4' tag="li">相关收藏</router-link>
                 </ul>
             </el-aside>
             <el-main>
