@@ -8,6 +8,7 @@ import Page2 from '@/components/Page2'
 import Page3 from '@/components/Page3'
 import Page4 from '@/components/Page4'
 import Page5 from '@/components/Page5'
+import Page6 from '@/components/Page6'
 
 
 Vue.use(Router)
@@ -18,25 +19,14 @@ export default new Router({
       path: '/',
       component: Home,
       children: [
-        {
-          path: '',
-          component: Page0
-        },{
-        path: '1',
-        component:Page1
-      }, {
-          path: '2',
-          component: Page2
-        }, {
-          path: '3',
-          component: Page3
-        }, {
-          path: '4',
-          component: Page4
-        }, {
-          path: '5',
-          component: Page5
-        }]
+        { path: '', component: Page0 },
+        { path: '1', component: Page1 },
+        { path: '2', component: Page2 },
+        { path: '3', component: Page3 },
+        { path: '4', component: Page4 },
+        { path: '5', component: Page5 },
+        { path: '6', component: Page6 },
+      ]
     }
   ]
 })

@@ -9,6 +9,7 @@
                     <router-link to='/3' tag="li">切换自动获取焦点</router-link>
                     <router-link to='/4' tag="li">相关收藏</router-link>
                     <router-link to='/5' tag="li">钩子函数</router-link>
+                    <router-link to='/6' tag="li">123</router-link>
                 </ul>
             </el-aside>
             <el-main>

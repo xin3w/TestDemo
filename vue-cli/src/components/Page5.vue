@@ -10,6 +10,8 @@
     </ol>
     <h1 class="tit1">查看一下定时器</h1>
     <div>{{counter}}</div>
+    <h1 class="tit1">测试keyCode-测试回车</h1>
+    <div><input type="text" @keyup.media-play-pause='pp' class="form-control"></div>
   </div>
 </template>
 
@@ -60,6 +62,17 @@
     destroyed() {
       console.log('8destroyed');
     },
-    methods: {},
+    methods: {
+      log(){
+        console.log("你妹的!");
+      },
+      pp(){
+        this.msg="adfasdfasdfasdfas"
+        this.$nextTick(function() {
+          this.log()
+        })
+        console.log(12312)
+      }
+    },
   }
 </script>

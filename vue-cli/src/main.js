@@ -4,7 +4,7 @@ import axios from 'axios'
 import router from '@/router'
 import store from '@/store'
 
-//mint-ui
+// MintUI
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
@@ -21,14 +21,28 @@ const i18n = new VueI18n({
   }
 })
 
+// ElementUI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
 
-Vue.config.productionTip = false
 Vue.prototype.$axios = axios
+Vue.config.productionTip = false
 
+// 自定义keycode
+Vue.config.keyCodes = {
+  v: 86,
+  f1: 112,
+  // camelCase 不可用
+  // 取而代之的是 kebab-case 且用双引号括起来
+  "media-play-pause": 13,
+  up: [38, 87]
+}
 
+Vue.nextTick(function () {
+  console.log("nextTick");
+  
+})
 
 import '@/assets/less/style.less'
 window.Vue = new Vue({
@@ -39,3 +53,5 @@ window.Vue = new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
